@@ -1,0 +1,630 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+/*---------NAVBAR----------*/
+.nav-link {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff !important;
+  transition: all 0.8s !important;
+  margin-right: 5px;
+}
+.nav-link:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 5px 5px 15px rgba(128, 128, 128, 0.659);
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+.nav {
+  position: fixed;
+  width: 70%;
+  justify-content: center;
+  margin: auto !important;
+  margin-top: 5px !important;
+  z-index: 122;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.is-scrolled {
+  background-color: rgba(128, 128, 128, 0.659);
+  box-shadow: 1px 5px 5px 15px rgba(128, 128, 128, 0.659);
+}
+.scrolled {
+  width: 90px !important;
+  height: 90px !important;
+}
+.social {
+  max-width: 60px;
+  height: auto;
+  padding: 10px;
+  margin-left: 80%;
+  margin-top: 0px;
+  transition: all 0.6s;
+}
+.social:hover {
+  transform: scale(1.4);
+}
+/*-------------------------*/
+/*----------HERO------------*/
+.hero {
+  position: relative;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+  z-index: -1;
+  margin-bottom: 50px;
+}
+.img-hero {
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#video-back {
+  position: absolute;
+  height: 600px;
+  min-width: 100% !important;
+  min-height: 100%;
+  top: -80px;
+  left: 0px;
+  filter: blur(2px);
+}
+
+/*---------------------------*/
+.jumb {
+  position: relative;
+  max-width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  background-image: url(./img/pexels-andrea-piacquadio-842546.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center top;
+  box-shadow: 1px 5px 5px 15px rgba(255, 2, 2, 0.411);
+  z-index: -1;
+}
+.cuore {
+  position: absolute;
+  max-width: 10%;
+  height: auto;
+  top: 20%;
+  left: 10%;
+  z-index: 999;
+  animation: vita 2s infinite;
+}
+
+@keyframes vita {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.titolo-san {
+  z-index: 999;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.piatti {
+  display: inline-block;
+  width: 100%;
+  justify-content: space-between !important;
+  text-align: center;
+  z-index: -1;
+}
+.card {
+  display: inline-block !important;
+  width: 15% !important;
+  padding: 10px;
+  margin: 0 20px;
+}
+.card-text {
+  font-weight: bold;
+}
+/*--------------STORIA---------------*/
+.storia {
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
+.img-storia,
+.text-storia {
+  padding: 20px 10px;
+  margin: 5px 5px;
+  max-width: 40%;
+}
+.image {
+  max-width: 800px;
+  height: auto;
+}
+.titolo-storia {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  color: #029aa5;
+  margin: 40px auto;
+}
+.puntini {
+  font-size: 65px;
+  color: #029aa5;
+}
+.testo-storia {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/*------------------------------------*/
+.registrazione {
+  margin: auto;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  transition: all 5s;
+  margin-top: 60px;
+  box-shadow: 5px 5px 30px 40px #ccc;
+  padding: 15px;
+}
+.tavolo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100px;
+  height: 100%;
+  transition: all 1.2s;
+  position: relative;
+  margin: 0px 5px;
+}
+.tavoli {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all 5s;
+  opacity: 0;
+  animation: ease-out;
+}
+.p-seleziona {
+  margin-left: 32%;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 3s;
+}
+.prenota {
+  border: none;
+}
+.intav {
+  border: none;
+  background-color: transparent;
+  font-size: 135px;
+  opacity: 1;
+  color: transparent;
+}
+.intav:hover {
+  cursor: pointer;
+}
+.dati {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bottone {
+  width: 270px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.invia {
+  display: inline-block;
+  margin-top: 20px;
+  align-self: center;
+  justify-content: center;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(5, 202, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 202, 222, 1) 0%,
+    rgba(0, 170, 114, 1) 75%
+  );
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 7s;
+  font-weight: bold;
+  border: none;
+  transform-origin: 0px;
+}
+.invia3 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 5% !important;
+  opacity: 0;
+}
+.invia3:hover,
+.invia2:hover {
+  font-size: 17px;
+  font-weight: bold;
+  transform: scale(1);
+}
+.invia2 {
+  transition: all 1.3s;
+  margin: 10px;
+  margin-left: 35%;
+  width: 150px !important;
+  margin-bottom: 30px;
+}
+.selezionato,
+.n-people {
+  display: block;
+  margin: 20px auto;
+  max-width: 50%;
+  max-height: 600px;
+  position: relative;
+}
+.titolo-form {
+  max-width: 90% !important;
+  font-size: 20px;
+  color: #000;
+  margin-left: 30% !important;
+}
+.n-people {
+  max-width: 20px !important;
+}
+.datoin {
+  margin-left: 20% !important;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  opacity: 0.4;
+  outline: none;
+  background: none;
+  margin-bottom: 20px;
+  margin: 0;
+  width: 70%;
+  transition: 2s;
+  transform-origin: left;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 350;
+  color: #029aa5;
+  font-weight: bold;
+}
+/*------------ANIMAZIONI-----------*/
+.animate__animated.animate__zoomInUp {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__zoomOut {
+  --animate-duration: 4s;
+}
+/*----------------------------------*/
+.dato {
+  margin-bottom: 20px;
+  display: block;
+  position: absolute;
+  color: #000;
+  transform: translateY(-1.2rem);
+  z-index: -1;
+  transition: 1.3s;
+  transform-origin: left;
+  font-weight: bold;
+  margin-left: 20%;
+}
+.form-item:focus-within .dato,
+.datoin:not(:placeholder-shown) + .dato {
+  transform: translateY(-2.4rem) scale(0.75);
+  color: #ccc;
+}
+
+.datoin:focus-within {
+  opacity: 1;
+  border-color: rgb(5, 202, 222);
+}
+
+.form-item {
+  max-height: 600px;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.autoh {
+  max-height: 900px;
+}
+.tav-visibili {
+  opacity: 1;
+}
+/*-----------traslati-----------------*/
+.prenotato {
+  background-color: #cc0b0bb7;
+}
+.scelta {
+  opacity: 0;
+}
+.scelta2 {
+  animation: spostato 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes spostato {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-270%);
+  }
+}
+/*--------------------------------------*/
+.testo {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 500;
+}
+.img {
+  background-image: url(./img/table.png);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+}
+.numero {
+  position: absolute;
+  font-size: 25px;
+  top: -5px;
+  left: 45%;
+}
+.libero {
+  box-shadow: 1px 5px 5px 15px #01ac2696;
+}
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+}
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+.title {
+  margin-left: auto !important;
+  text-align: center;
+}
+.sottolinea::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60%;
+  position: absolute;
+  background-color: rgb(5, 202, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 202, 222, 1) 0%,
+    rgba(0, 170, 114, 1) 75%
+  );
+  animation: line 5s infinite;
+}
+@keyframes line {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  50% {
+    width: 75%;
+    opacity: 1;
+  }
+  75% {
+    width: 75%;
+    opacity: 0;
+  }
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}
+/*-----------footer-------------*/
+.footer {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #cec8c8;
+  padding: 10px;
+}
+.liste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+  margin: 0px 5%;
+}
+.liste > ul {
+  list-style-type: none !important;
+}
+.fh3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  width: 20%;
+}
+.social2 {
+  width: 10% !important;
+}
+/*------------------pren avvenuta--------------*/
+.pren-avvenuta {
+  margin-left: 25%;
+}
+
+/*------------------SMARTPHONE-----------------*/
+@media (max-width: 767px) {
+  .social {
+    width: 50px;
+    position: fixed;
+    top: 51%;
+    right: 0px;
+  }
+  .social1 {
+    width: 50px;
+    position: fixed;
+    top: 46%;
+    right: 0px;
+    z-index: 999;
+  }
+  .hero {
+    display: none;
+  }
+  .navbar {
+    margin-top: 0px;
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 0px !important;
+    position: fixed !important;
+    z-index: 999;
+  }
+  .img-hero {
+    width: 70px;
+    height: auto;
+    left: 3px;
+  }
+  .nav {
+    background-color: #000;
+    position: fixed !important;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+  }
+  .nav-link {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .storia,
+  .text-storia {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: flex-start;
+  }
+  .titolo-storia {
+    margin: 0px;
+    font-size: 30px;
+  }
+  .titolo-san {
+    font-size: 13px !important ;
+    left: 15%;
+  }
+  .text-storia {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .image {
+    max-width: 340px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .piatti {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    margin: 10px auto;
+    width: 80% !important;
+  }
+  .registrazione {
+    max-width: 100%;
+  }
+  .selezionato,
+  .n-people {
+    max-width: 100%;
+  }
+  .titolo-form {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+  .sottolinea::after {
+    width: 100% !important;
+  }
+  .tavoli {
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+  .tavolo {
+    width: 50px;
+    height: 50px;
+  }
+  .prenotato,
+  .libero {
+    display: none;
+  }
+  .numero {
+    top: -20px;
+    left: 40%;
+    z-index: -1;
+  }
+  .intav {
+    padding: 5px;
+    border: 2px solid green;
+    width: 50px;
+    height: 70px;
+    z-index: 999;
+  }
+  .pren-avvenuta{padding-top: 140px;}
+
+  .footer{padding:22px 0px;}
+  .social2{display: none;}
+  .liste{width: 100%;}
+  .fh3{width: 12%; margin-left: 0px;}
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione Ristorante</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+
+<body>
+<div class="container navbar">
+    <nav class="nav" id="nav-b">
+        <a class="logo" aria-current="page" href="#"><img src="./img/logorestaurant-removebg-preview.png" alt="logo" class="img-hero" id="image"></a>
+        <a class="nav-link" href="#lastoria">La nostra storia</a>
+        <a class="nav-link" href="#prenotatavolo">Prenota tavolo</a>
+        <a href="#"><img src="./img/facebook.png" class="social social1"></a>
+        <a href="#"><img src="./img/instagram.png" class="social"></a>
+    </nav>
+</div>
+<div class="hero">
+<video autoplay muted loop id="video-back">
+    <source src="./img/production ID_3769033.mp4" type="video/mp4">
+</video>
+</div>
+
+<a name="lastoria">
+<div class="storia">
+    <div class="img-storia">
+        <img src="./img/fotostoria.jpg" alt="foto" class="image">
+    </div>
+    <div class="text-storia">
+        <h2 CLASS="testo-storia">LA NOSTRA STORIA</h2>
+        <h2 class="titolo-storia">A Regola d'arte</h2>
+        <h2 class="puntini">....</h2>
+        <h4 class="testo-storia">Tutte le nostre pizze sono lavorate con farina italiana di grano tenero, farina tipo 1 con germi di grano, 
+            nel nostro impasto non vi è presenza di alcun tipo di grassi.
+            Tempi perfetti, ingredienti naturali e gusto personale sono la base per una pizza a “Regola d’Arte”.
+            Le nostre lievitazioni variano dalle 24 alle 50 ore. Il nostro impasto con lievitazione “Madre” 
+            permette di ottenere una pizza molto soffice con farine ricche di proteine vegetali, vitamine, 
+            minerali e fibre esprimendo aromi e sapori intensi donando alla pizza un gusto ed una leggerezza unica.</h4>
+    </div>
+</div>
+</a>
+
+
+<div class="jumb">
+        <img src="./img/cuore-1152x1084.png" alt="romantico" class="cuore">
+        
+    <div>
+        <h3 class="titolo-storia titolo-san">Per san valentino un menu speciale</h3>
+    </div>
+</div>  
+
+
+<div class="piatti">
+    <h4 class="titolo-storia">qualche piatto...</h4>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pexels-dana-tentis-725997.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pexels-macedo-fotografo-10883374.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pexels-mali-maeder-64208.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pexels-olga-lioncat-7245480.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+</div>
+
+
+
+<section class="registrazione" id="trasla"><a name="prenotatavolo">
+        <div class="form-item" id="auto-h">
+            <div class="selezionato titolo-form">
+            <h1 class="sottolinea">FORM PRENOTAZIONE TAVOLO</h1><br>
+        </div>
+        <div class="selezionato">
+            <input type="text" name="nome" id="nome" class="datoin" placeholder=" " required>
+            <label for="nome" class="dato">NOME</label>
+        </div>
+        <div class="selezionato">
+            <br>
+            <input type="text" name="cognome" id="cognome" class="datoin" placeholder=" " required> 
+            <label for="cognome" class="dato">COGNOME</label>
+        </div>
+        <div class="selezionato">
+            <br>
+            <input type="text" name="email" id="email" class="datoin" placeholder=" " required>
+            <label for="email" class="dato">E-MAIL</label>
+        </div>    
+        <div class="selezionato">
+            <br>
+            <input type="int" name="npersone" id="npersone" class="datoin" placeholder=" " required>
+            <label for="n-persone" class="dato">NUMERO PERSONE</label>
+        </div>
+        <br>
+        <div class="selezionato">
+            <input type="button" value="PROSEGUI" class="invia invia2" onclick="confrontopersone()">
+            <p class="p-seleziona" id="titolo-seleziona">SELEZIONA UN TAVOLO</p>   
+        </div>
+        <div class="dati">
+            <div class="selezionato">
+                <h3 id="text1"></h3>
+                <h5 id="text2"></h5>
+            </div>
+    </div></a>
+       
+
+<div class="tavoli" id="tav1">
+    <div class="tavolo img" >
+        <span class="numero">1</span>
+     <input class="intav" type="button" value="1" id="1" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo img">
+        <span class="numero">2</span>
+     <input class="intav" type="button" value="2" id="2" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo tavolo6 img">
+        <span class="numero">3</span>
+     <input class="intav" type="button" value="3" id="3" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo img"> 
+        <span class="numero">4</span>
+     <input class="intav" type="button" value="4" id="4" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo tavolo6 img">
+        <span class="numero">5</span>
+     <input class="intav" type="button" value="5" id="5" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo img">
+        <span class="numero">6</span>
+     <input class="intav" type="button" value="6" id="6" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo img">
+        <span class="numero">7</span>
+     <input class="intav" type="button" value="7" id="7" onclick="prenotazione(this.value)">
+    </div>
+    <div class="tavolo tavolo6 img">
+        <span class="numero">8</span>
+     <input class="intav" type="button" value="8" id="8" onclick="prenotazione(this.value)">
+    </div>
+</div>
+    <br>
+    <div  class="selezionato">
+       <a href="prenotazione.html"><input type="submit" value="INVIA PRENOTAZIONE" id="but" class="submit invia invia3"></a>
+        <input type="reset" value="RESET" class="invia invia3" id="but2" onclick="window.location.reload()">
+    </div>
+</div>  
+</section>
+
+</body>
+
+<footer>
+<div class="footer">
+    <div class="liste">
+        <h4 class="fh3">Orari</h4></li>
+        <ul>
+            <li>
+            <li>Lunedi - Sabato</li>
+            <li>12:30pm - 3pm | 7:30pm - 12am</li>
+            <li></li>
+            <li>Domenica</li>
+            <li>12pm - 4:30pm | 7:30pm - 11pm</li>
+        </ul>
+    </div>
+    <div class="liste social2">
+            <h4 class="fh3">seguici</h4></li>
+            <a href="#"><img src="./img/facebook.png" class="social"></a>
+            <a href="#"><img src="./img/instagram.png" class="social"></a>
+    </div>
+</div>
+
+
+</footer>
+</html>
